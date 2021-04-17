@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <style>
+    .container1
+    {
+       text-align: center;
+       border: 2px solid black;
+       background-color: yellow;
+       width:50%;
+       padding-left: 50px;
+       margin-left: 170px;
+       
+    }
+    body{
+        background-color: turquoise;
+    }
+    form
+    {
+        padding-top: 50px;
+    }
+    .container2
+    {
+       text-align: center;
+       border: 2px solid black;
+       background-color:rgb(128, 126, 0);
+       font-size: large;
+       margin-top: 90px;
+    }
+    .container3
+    {
+        text-align: center;
+       border: 2px solid black;
+       background-color:rgb(68, 128, 0);
+       font-size: large;
+       margin-top: 90px;
+       margin-left: 30px;
+    }
+    input[type=number]
+    {
+    width: 50%;
+    height: 50px;
+            }
+    input[type=submit]
+    {
+        width: 30%;
+        padding-top: 10px;
+    }       
+    .form-control
+    {
+        width: 30%;
+    } 
+
+   
+</style>
+  
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-10 offset-x1-4 container1">
+            <h1>BOOK APPOINTMENT</h1>
+        </div>
+        
+    </div>
+    <div class="w3-show-inline-block">
+        <label for="username" class="container2" >username</label>
+        <label for="name" class="container3">&nbsp;&nbsp;&nbsp;VIMLA DEVI</label>
+        <label for="rationno" class="container2" style="margin-left: 200px;">Ration No.</label>
+        <label for="no" class="container2" style="margin-left: 30px;">1234509776</label>
+        <form id="appointment-form" method="post" >
+            <div class="form-group">
+                <div>
+                    <img src="ration.jpg" align="right" height="250px" width="600px"> 
+                </div>
+                <label for="state">Select State</label>
+                <select class="form-control" id="state">
+                    <option>select state</option>
+                    <option>Delhi</option>
+                    <option>Maharastra</option>
+                    <option>Tamil Nadu</option>
+                    <option>Assam</option>
+                    <option>Uttrakhand</option>
+                </select>
+            </div>
+           
+            <div class="form-group">
+                <label for="city">Select city</label>
+                <select class="form-control" id="city">
+                    <option>Select City</option>
+                    <option>Mumbai</option>
+                    <option>Lucknow</option>
+                    <option>Ahmedabad</option>
+                    <option>Manipur</option>
+                    <option>Jaipur</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="center">Select Ration center</label>
+                <select class="form-control" id="location">
+                    <option>Select Ration Center</option>
+                    <option>Ambedkar Nagar</option>
+                    <option>saket</option>
+                    <option>Sangam vihar</option>
+                    <option>Khanpur</option>
+                    <option>Tigri</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+            </div>
+           
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

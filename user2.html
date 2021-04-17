@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+    <meta charset='utf-8'>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="viewstatus.js"></script>
+  
+    <style>
+        .container1
+    {
+       text-align: center;
+       border: 2px solid black;
+       background-color: yellow;
+       width:50%;
+       padding-left: 70px;
+       margin-left: 200px;
+       margin-top: 70px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-size: xx-large;
+       font-weight: bolder;
+       color: red;
+       
+    }
+    
+    body{
+        background-color: turquoise;
+    }
+        form
+        {
+            padding-top: 50px;
+        }
+        .container2
+        {
+           text-align: center;
+           border: 2px solid black;
+           background-color:rgb(128, 126, 0);
+           font-size: xx-large;
+        }
+        input[type=number]
+        {
+        width: 50%;
+        height: 50px;
+                }
+        input[type=submit]
+        {
+            width: 30%;
+            padding-top: 10px;
+        }        
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 offset-x1-4 container1">
+                <h1>&nbsp;RATION CARD USER LOGIN</h1></div>
+                <form id="login-form" method="post" role="form">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <label for="rationno" class="container2">ENTER THE RATION NUMBER HERE</label>
+                                <input id="ration" type="number" placeholder="Please enter the ration number here" 
+                                required="required" data-error="ration card number is required">
+                                <div class="form-group">
+                                <table>
+                                <tr style="background-color:#ffcc66; vertical-align:bottom;">
+                                    <td>
+                                        <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:130px;height:48px;font-size:38px;" maxlength="6"><br>
+                                        <i>Enter the captcha</i>
+                                    </td>
+                                    <td>
+                                        <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a><br>
+                                        <a href="https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx"><img id="CaptchaImage" alt="Enter the captcha" style="border-width:0px;" src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=DEMO12345678"></a>
+                                        <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript">
+                                            function ReloadCaptchaImage(captchaImageId) {
+                                                var obj = document.getElementById(captchaImageId);
+                                                var src = '' + obj.src;
+                                                obj.src = '';
+                                                var date = new Date();
+                                                var pos = src.indexOf('&rad=');
+                                                if (pos >= 0) { src = src.substr(0, pos); }
+                                                obj.src = src + '&rad=' + date.getTime();
+                                                return false;
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+                                </table>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary" onclick="otp()">SUBMIT</button>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Enter the Otp" class="container2">ENTER THE OTP</label>
+                                    <input type="number" required="required" placeholder="Enter the OTP">
+
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" onclick="window.location.href='user3.html';" class="btn btn-success">SUBMIT</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
