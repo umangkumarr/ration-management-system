@@ -4,11 +4,12 @@ Ration Distribution Management System mainly focus on the distribution of ration
 
 This project have optimised the distribution of ration by the following:
 1. Appointment system: Every user will get the appointment to collect their ration from the their respective ration distribution centre.
-2. Secure Algorithm (uncomplete) to prevent any kind of fraudulent so that every peice of ration goes only to its true owner. The algorithm is designed to prevent any outsider from accessing any information related to ration holder to prevent the misuse of the ration card of the ration holder. (The algo has only a basic structure)
+2. Secure Algorithm (uncomplete) to prevent any kind of fraudulent so that every piece of ration goes only to its true owner. The algorithm is designed to prevent any outsider from accessing any information related to ration holder to prevent the misuse of the ration card of the ration holder. (The algo has only a basic structure)
 
 ## How to use:
 1. Main page: Use your respective login
-**For User login**
+
+    **For User login**
     1. On home page select the respective option from
         1. Book New Appointment: To book new appointment
         2. Update Appointment: To Change the previous alloted appointment
@@ -20,7 +21,7 @@ This project have optimised the distribution of ration by the following:
     3. Book Appointment page:
         1. Enter your respective city, state, and ration centre then submit.
     4. Appointment date:
-          1. Select the a date for the appointment according to you convenience.
+          1. Select a date for the appointment according to you convenience.
 
     **Distributor login**
     1. Login page: Enter your login details and submit.
@@ -37,4 +38,5 @@ This project have optimised the distribution of ration by the following:
 
 -------------
 Team Leader: Vaibhav Yadav
+
 Team Member: Umang Kumar
